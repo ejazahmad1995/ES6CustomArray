@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+
+class Automobile{
+        constructor(b,p,m){//Blueprint
+                this.brand=b;
+                this.staring=p;
+                this.model=m;
+        }
+
+}
+
+
+let m1=new Automobile("mahindra","Power","SUV");
+
+console.log(m1);
+
+class Automobile1 extends Automobile{
+
+        constructor(b,p,m,s,g){
+                super(b,p,m);
+                this.sound=s;
+                this.gear=g;
+
+        }
+}
+
+let m2=new Automobile1("Bolero","power","SuV","Dolby","PowerGear");
+
+console.log(m2);
+    
+</script>
